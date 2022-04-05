@@ -1,0 +1,46 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.callTestCase(findTestCase('Page de connexion/Connexion/ConnexionTrue'), [('login') : 'itachi'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Objets de Création de Ticket en masse/a_Ticket'))
+
+WebUI.click(findTestObject('Objets de Création de Ticket en masse/a_Cration par lot'))
+
+//WebUI.waitForElementClickable(findTestObject('Objets de Création de Ticket en masse/button_Choix du fichier'), 10)
+WebUI.uploadFile(findTestObject('Objets de Création de Ticket en masse/button_Choix du fichier'), '//Users//ib//Downloads//export_template_637781048382914115.xlsx')
+
+WebUI.click(findTestObject('Objets de Création de Ticket en masse/button_Vrification'))
+
+WebUI.click(findTestObject('Objets de Création de Ticket en masse/div_Catgorie_ng-select-container'))
+
+WebUI.click(findTestObject('Objets de Création de Ticket unitaire/span_EQUIPE DE TEST SMILE'))
+
+WebUI.click(findTestObject('Objets de Création de Ticket en masse/div_Sous Catgorie 1_ng-select-container'))
+
+WebUI.click(findTestObject('Objets de Création de Ticket unitaire/span_AUTOMATISATION'))
+
+WebUI.click(findTestObject('Objets de Création de Ticket en masse/div_Localisation_ng-select-container'))
+
+WebUI.setText(findTestObject('Objets de Création de ticket unitaire second/input_Localisation_localisation'), 'Yopo')
+
+WebUI.click(findTestObject('Objets de Création de ticket unitaire second/span_Yopougon Ananeraie'))
+
+WebUI.click(findTestObject('Objets de Création de Ticket en masse/input_Notification  mon groupe_form-check-input ng-untouched ng-pristine ng-valid'))
+

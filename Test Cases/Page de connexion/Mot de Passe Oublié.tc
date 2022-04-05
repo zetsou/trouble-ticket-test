@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Mot de Passe Oublié</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae63f5b8-52da-4cf1-a3af-1ab312eeb164</testCaseGuid>
+   <variable>
+      <defaultValue>'ibrahim.kone@smile.ci'</defaultValue>
+      <description></description>
+      <id>915e9831-9e2e-4e70-bc16-f4e7dcf09d3c</id>
+      <masked>false</masked>
+      <name>email_oublie</name>
+   </variable>
+</TestCaseEntity>

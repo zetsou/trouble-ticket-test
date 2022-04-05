@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ConnexionFalse</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e92858d6-2ab9-493e-91ee-52c25d8e1581</testCaseGuid>
+   <variable>
+      <defaultValue>'itachi'</defaultValue>
+      <description></description>
+      <id>4ac1f543-7d00-4cde-97bc-638ca4ca9ca2</id>
+      <masked>false</masked>
+      <name>login</name>
+   </variable>
+</TestCaseEntity>
